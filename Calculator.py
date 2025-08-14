@@ -81,8 +81,8 @@ def vui2():
 
 def add(a, b):
     global RESULT
-    a = int(a)
-    b = int(b)
+    a = float(a)
+    b = float(b)
     RESULT = a + b
     print(f"{a}+{b} = {RESULT}")
     addui2()
@@ -120,8 +120,8 @@ def addui2():
 
 def sub(a, b):
     global RESULT
-    a = int(a)
-    b = int(b)
+    a = float(a)
+    b = float(b)
     RESULT = a - b
     print(f"{a}-{b} = {RESULT}")
     subui2()
@@ -159,8 +159,8 @@ def subui2():
     
 def mult(a, b):
     global RESULT
-    a = int(a)
-    b = int(b)
+    a = float(a)
+    b = float(b)
     RESULT = a * b
     print(f"{a}x{b} = {RESULT}")
     multui2()
@@ -198,8 +198,8 @@ def multui2():
     
 def div(a, b):
     global RESULT
-    a = int(a)
-    b = int(b)
+    a = float(a)
+    b = float(b)
     RESULT = a / b
     print(f"{a}÷{b} = {RESULT}")
     divui2()
@@ -237,8 +237,8 @@ def divui2():
 
 def exp(a, b):
     global RESULT
-    a = int(a)
-    b = int(b)
+    a = float(a)
+    b = float(b)
     RESULT = a ** b
     print(f"{a}^{b} = {RESULT}")
     expui2()
@@ -276,7 +276,7 @@ def expui2():
     
 def sqrt(num):
     global RESULT
-    num = int(num)
+    num = float(num)
     RESULT = num ** 0.5
     print(f"Square root of {num} is {RESULT}")
     sqrtui2()
