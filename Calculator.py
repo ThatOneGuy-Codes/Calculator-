@@ -1,307 +1,208 @@
 import time
 RESULT = 0
-
-def vui():
-    print(" ")
-    print("Welcome to my virtual calculator")
-    time.sleep(1)
-    print("Enter certain short-hands to start an operation")
-    print(" ")
-    time.sleep(0.5)
-    print("ADD = Addition")
-    time.sleep(0.5)
-    print("SUB = Subtraction")
-    time.sleep(0.5)
-    print("MUL = Multiplication")
-    time.sleep(0.5)
-    print("DIV = Division")
-    time.sleep(0.5)
-    print("EXP = Exponent/Power Of")
-    time.sleep(0.5)
-    print("SQRT = Square Root")
-    time.sleep(0.5)
-    print("EXIT = Exit the program")
-    time.sleep(2)
-    operation = input("Choose an operation").strip().upper()
-    if operation == "ADD":
-        addui1()
-    elif operation == "SUB":
-        subui1()
-    elif operation == "MUL":
-        multui1()
-    elif operation == "DIV":
-        divui1()
-    elif operation == "EXP":
-        expui1()
-    elif operation == "SQRT":
-        sqrtui1()
-    elif operation == "EXIT":
-        print("Exiting...")
-        time.sleep(2)
-        print("Successfully exited host environment")
-        exit()
-        
-def vui2():
-    print(" ")
-    print("Enter certain short-hands to start an operation")
-    print(" ")
-    time.sleep(0.5)
-    print("ADD = Addition")
-    time.sleep(0.5)
-    print("SUB = Subtraction")
-    time.sleep(0.5)
-    print("MUL = Multiplication")
-    time.sleep(0.5)
-    print("DIV = Division")
-    time.sleep(0.5)
-    print("EXP = Exponent/Power Of")
-    time.sleep(0.5)
-    print("SQRT = Square Root")
-    time.sleep(0.5)
-    print("EXIT = Exit the program")
-    time.sleep(2)
-    operation = input("Choose an operation").strip().upper()
-    if operation == "ADD":
-        addui1()
-    elif operation == "SUB":
-        subui1()
-    elif operation == "MUL":
-        multui1()
-    elif operation == "DIV":
-        divui1()
-    elif operation == "EXP":
-        expui1()
-    elif operation == "SQRT":
-        sqrtui1()
-    elif operation == "EXIT":
-        print("Exiting...")
-        time.sleep(2)
-        print("Successfully exited host environment")
-        exit()
-
+addition = False
+subtraction = False
+multiplication = False
+division = False
+exponent = False
+squareroot = False
+triginometry = False
+pytm = False
+pyth = False
+pyta = False
+pytb = False
+opmsg = "Enter an operation"
+mmmsg = "ADD = Addition\nSUB = Subtraction\nMUL = Multiplication\nDIV = Division\nEXP = Exponent/Power Of\nSQRT = Square Root"
 def add(a, b):
     global RESULT
-    a = int(a)
-    b = int(b)
+    a = float(a)
+    b = float(b)
     RESULT = a + b
-    print(f"{a}+{b} = {RESULT}")
-    addui2()
+    print(f"{a}+{b}={RESULT}")
     
-def addui1():
-    time.sleep(1)
-    print(" ")
-    print("Entered addition mode")
-    time.sleep(0.5)
-    print("Type BACK to exit this mode")
-    time.sleep(0.5)
-    adda = input("Write the number to add to").strip().upper()
-    if adda == "BACK":
-        vui2()
-    time.sleep(1)
-    addb = input("Write how much you want to add").strip().upper()
-    if addb == "BACK":
-        vui2()
-    time.sleep(0.5)
-    add(adda, addb)
-    
-def addui2():
-    time.sleep(1)
-    print("Type BACK to exit this mode")
-    time.sleep(0.5)
-    adda = input("Write the number to add to").strip().upper()
-    if adda == "BACK":
-        vui2()
-    time.sleep(1)
-    addb = input("Write how much you want to add").strip()
-    if addb == "BACK":
-        vui2()
-    time.sleep(0.5)
-    add(adda, addb)
-
 def sub(a, b):
     global RESULT
-    a = int(a)
-    b = int(b)
+    a = float(a)
+    b = float(b)
     RESULT = a - b
-    print(f"{a}-{b} = {RESULT}")
-    subui2()
+    print(f"{a}-{b}={RESULT}")
     
-def subui1():
-    time.sleep(1)
-    print(" ")
-    print("Entered subtraction mode")
-    time.sleep(0.5)
-    print("Type BACK to exit this mode")
-    time.sleep(0.5)
-    suba = input("Write the number to subtract from").strip().upper()
-    if suba == "BACK":
-        vui2()
-    time.sleep(1)
-    subb = input("Write how much you want to subtract").strip().upper()
-    if subb == "BACK":
-        vui2()
-    time.sleep(0.5)
-    sub(suba, subb)
-    
-def subui2():
-    time.sleep(1)
-    print("Type BACK to exit this mode")
-    time.sleep(0.5)
-    suba = input("Write the number to subtract from").strip().upper()
-    if suba == "BACK":
-        vui2()
-    time.sleep(1)
-    subb = input("Write how much you want to subtract").strip().upper()
-    if subb == "BACK":
-        vui2()
-    time.sleep(0.5)
-    sub(suba, subb)
-    
-def mult(a, b):
+def mul(a, b):
     global RESULT
-    a = int(a)
-    b = int(b)
+    a = float(a)
+    b = float(b)
     RESULT = a * b
-    print(f"{a}x{b} = {RESULT}")
-    multui2()
-    
-def multui1():
-    time.sleep(1)
-    print(" ")
-    print("Entered multiplication mode")
-    time.sleep(0.5)
-    print("Type BACK to exit this mode")
-    time.sleep(0.5)
-    multa = input("Write the number to multiply").strip().upper()
-    if multa == "BACK":
-        vui2()
-    time.sleep(1)
-    multb = input("Write how much you want to multiply by")
-    if multb == "BACK":
-        vui2()
-    time.sleep(0.5)
-    mult(multa, multb)
-    
-def multui2():
-    time.sleep(1)
-    print("Type BACK to exit this mode")
-    time.sleep(0.5)
-    multa = input("Write the number to multiply").strip().upper()
-    if multa == "BACK":
-        vui2()
-    time.sleep(1)
-    multb = input("Write how much you want to multiply by")
-    if multb == "BACK":
-        vui2()
-    time.sleep(0.5)
-    mult(multa, multb)
+    print(f"{a}x{b}={RESULT}")
     
 def div(a, b):
     global RESULT
-    a = int(a)
-    b = int(b)
+    a = float(a)
+    b = float(b)
     RESULT = a / b
-    print(f"{a}÷{b} = {RESULT}")
-    divui2()
+    print(f"{a}÷{b}={RESULT}")
     
-def divui1():
-    time.sleep(1)
-    print(" ")
-    print("Entered division mode")
-    time.sleep(0.5)
-    print("Type BACK to exit this mode")
-    time.sleep(0.5)
-    diva = input("Write the number to divide").strip().upper()
-    if diva == "BACK":
-        vui2()
-    time.sleep(0.5)
-    divb = input("Write how much you want to divide by")
-    if divb == "BACK":
-        vui2()
-    time.sleep(0.5)
-    div(diva, divb)
-    
-def divui2():
-    time.sleep(1)
-    print("Type BACK to exit this mode")
-    time.sleep(0.5)
-    diva = input("Write the number to divide").strip().upper()
-    if diva == "BACK":
-        vui2()
-    time.sleep(0.5)
-    divb = input("Write how much you want to divide by")
-    if divb == "BACK":
-        vui2()
-    time.sleep(0.5)
-    div(diva, divb)
-
-def exp(a, b):
+def exp(b, p):
     global RESULT
-    a = int(a)
-    b = int(b)
-    RESULT = a ** b
-    print(f"{a}^{b} = {RESULT}")
-    expui2()
+    b = float(b)
+    p = float(p)
+    RESULT = b ** p
+    print(f"{b}^{p}={RESULT}")
     
-def expui1():
-    time.sleep(1)
-    print(" ")
-    print("Entered exponent mode")
-    time.sleep(0.5)
-    print("Type BACK to exit this mode")
-    time.sleep(0.5)
-    expa = input("Write the base number").strip().upper()
-    if expa == "BACK":
-        vui2()
-    time.sleep(0.5)
-    expb = input("Write the exponent number")
-    if expb == "BACK":
-        vui2()
-    time.sleep(0.5)
-    exp(expa, expb)
-    
-def expui2():
-    time.sleep(1)
-    print("Type BACK to exit this mode")
-    time.sleep(0.5)
-    expa = input("Write the base number").strip().upper()
-    if expa == "BACK":
-        vui2()
-    time.sleep(0.5)
-    expb = input("Write the exponent number")
-    if expb == "BACK":
-        vui2()
-    time.sleep(0.5)
-    exp(expa, expb)
-    
-def sqrt(num):
+def sqrt(n):
     global RESULT
-    num = int(num)
-    RESULT = num ** 0.5
-    print(f"Square root of {num} is {RESULT}")
-    sqrtui2()
-
-def sqrtui1():
-    time.sleep(1)
-    print(" ")
-    print("Entered square root mode")
-    time.sleep(0.5)
-    print("Type BACK to exit this mode")
-    time.sleep(0.5)
-    sqrtnum = input("Write the base number").strip().upper()
-    if sqrtnum == "BACK":
-        vui2()
-    time.sleep(0.5)
-    sqrt(sqrtnum)
+    n = float(n)
+    RESULT = n ** 0.5
+    print(f"Square root of {n} is {RESULT}")
     
-def sqrtui2():
-    time.sleep(1)
-    print("Type BACK to exit this mode")
-    time.sleep(0.5)
-    sqrtnum = input("Write the base number").strip().upper()
-    if sqrtnum == "BACK":
-        vui2()
-    time.sleep(0.5)
-    sqrt(sqrtnum)
+time.sleep(1)
+print("Welcome to my virtual calculator")   
 
-vui()
+while True:
+    time.sleep(1)
+    print("Enter certain short-hands to start an operation")
+    time.sleep(1)
+    print("Type EXIT to shut down this program")
+    time.sleep(0.5)
+    print(mmmsg)
+    time.sleep(2)
+    operation = input(opmsg).strip().upper()
+            
+    if operation == "ADD":
+        addition = True
+        time.sleep(0.5)
+        print(" ")
+        print("Entered Addition Mode")
+        time.sleep(0.5)
+        print("Type BACK to exit this mode")
+        time.sleep(0.5)
+        while addition:
+            adda = input("Enter the number to add to").strip().upper()
+            if adda == "BACK":
+                operation = " "
+                addition = False
+                print(" ")
+                break
+            time.sleep(0.5)
+            addb = input("Enter how much you want to add").strip().upper()
+            if addb == "BACK":
+                operation = " "
+                addition = False
+                print(" ")
+                break
+            time.sleep(0.5)
+            add(adda, addb)
+    elif operation == "SUB":
+        subtraction = True
+        time.sleep(0.5)
+        print(" ")
+        print("Entered Subtraction Mode")
+        time.sleep(0.5)
+        print("Type BACK to exit this mode")
+        time.sleep(0.5)
+        while subtraction:
+            suba = input("Enter the number to subtract from").strip().upper()
+            if suba == "BACK":
+                operation = " "
+                subtraction = False
+                print(" ")
+                break
+            time.sleep(0.5)
+            subb = input("Enter how much you want to subtract").strip().upper()
+            if subb == "BACK":
+                operation = " "
+                subtraction = False
+                print(" ")
+                break
+            time.sleep(0.5)
+            sub(suba, subb)
+    elif operation == "MUL":
+        multiplication = True
+        time.sleep(0.5)
+        print(" ")
+        print("Entered Multiplication Mode")
+        time.sleep(0.5)
+        print("Type BACK to exit this mode")
+        time.sleep(0.5)
+        while multiplication:
+            mula = input("Enter the number to multiply").strip().upper()
+            if mula == "BACK":
+                operation = " "
+                multiplication = False
+                print(" ")
+                break
+            time.sleep(0.5)
+            mulb = input("Enter how much you want to multiply by").strip().upper()
+            if mulb == "BACK":
+                operation = " "
+                multiplication = False
+                print(" ")
+                break
+            time.sleep(0.5)
+            mul(mula, mulb)
+    elif operation == "DIV":
+        division = True
+        time.sleep(0.5)
+        print(" ")
+        print("Entered Division Mode")
+        time.sleep(0.5)
+        print("Type BACK to exit this mode")
+        while division:
+            diva = input("Enter the number to divide").strip().upper()
+            if diva == "BACK":
+                operation = " "
+                division = False
+                print(" ")
+                break
+            time.sleep(0.5)
+            divb = input("Enter how much you want to divide by").strip().upper()
+            if divb == "BACK":
+                operation = " "
+                division = False
+                print(" ")
+                break
+            time.sleep(0.5)
+            div(diva, divb)
+    elif operation == "EXP":
+        exponent = True
+        time.slep(0.5)
+        print(" ")
+        print("Entered Exponent Mode")
+        time.sleep(0.5)
+        print("Type BACK to exit this mode")
+        while exponent:
+            expb = input("Enter the base number").strip().upper()
+            if expb == "BACK":
+                operation = " "
+                exponent = False
+                print(" ")
+                break
+            time.sleep(0.5)
+            expp = input("Enter the exponent number").strip().upper()
+            if expp == "BACK":
+                operation = " "
+                exponent = False
+                print(" ")
+                break
+            time.sleep(0.5)
+            exp(expb, expp)
+    elif operation == "SQRT":
+        squareroot = True
+        time.sleep(0.5)
+        print(" ")
+        print("Entered Square Root Mode")
+        time.sleep(0.5)
+        print("Type BACK to exit this mode")
+        while squareroot:
+            sqrtn = input("Enter the base number").strip().upper()
+            if sqrtn == "BACK":
+                operation = " "
+                squareroot = False
+                print(" ")
+                break
+            time.sleep(0.5)
+            sqrt(sqrtn)
+    elif operation == "EXIT":
+        print(" ")
+        print("Exiting Host Environment")
+        time.sleep(2)
+        exit()
