@@ -3,9 +3,7 @@ This is my virtual calculator, designed with simple usability as well as offerin
 The newest version is now V 1.0.2 which features:
   - Code Improvements
 
-Users can now input numbers for operations that include decimal numbers
-For example:
-19.287
+This update offers better code improvements which will help speed up future development
 
 The operations for this version V 1.0.1 include:
   - Addition
