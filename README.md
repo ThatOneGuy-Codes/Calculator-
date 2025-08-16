@@ -5,7 +5,7 @@ The newest version is now V 1.0.2 which features:
 
 This update offers better code improvements which will help speed up future development
 
-The operations for this version V 1.0.1 include:
+The operations for this version V 1.0.2 include:
   - Addition
   - Subtraction
   - Multiplication
