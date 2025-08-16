@@ -1,7 +1,7 @@
 This is my virtual calculator, designed with simple usability as well as offering a wide variety of mathematical options.
 
-The newest version is now V 1.0.1 which features:
-  - Support for numbers with decimal integers
+The newest version is now V 1.0.2 which features:
+  - Code Improvements
 
 Users can now input numbers for operations that include decimal numbers
 For example:
