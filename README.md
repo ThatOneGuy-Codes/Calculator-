@@ -3,8 +3,8 @@ This is my virtual calculator, designed with simple usability as well as offerin
 The newest version is now V 1.0.3 which features:
   - Number Checking
   - Fixed bug when entering exponent mode
-This update now checks if the inputs given are valid number inputs
 
+This update now checks if the inputs given are valid number inputs
 The operations for this version V 1.0.3 include:
   - Addition
   - Subtraction
