@@ -12,7 +12,7 @@ pyth = False
 pyta = False
 pytb = False
 opmsg = "Enter an operation"
-mmmsg = "--------------------------\nADD = Addition\nSUB = Subtraction\nMUL = Multiplication\nDIV = Division\nEXP = Exponent/Power Of\nSQRT = Square Root\nTRIG = Triginometry Mode\n--------------------------"
+mmmsg = "--------------------------\nADD = Addition\nSUB = Subtraction\nMUL = Multiplication\nDIV = Division\nEXP = Exponent/Power Of\nSQRT = Square Root\n--------------------------"
 def add(a, b):
     global RESULT
     try:
